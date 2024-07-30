@@ -76,7 +76,7 @@ npm run test:ui
 
 Include screenshots of the application here, showing both desktop and mobile views of the profile card.
 
-Mobile views of the profile card
+Mobile views of the profile card<br>
 <img alt="UI Process" src="./mobile.png" width="70%" height="70%" /><br>
 
 Desktop views of the profile card
