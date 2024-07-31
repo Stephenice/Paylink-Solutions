@@ -13,12 +13,23 @@ interface User {
   website: string;
 }
 
+/**
+ * Renders a component that displays detailed information about a user.
+ *
+ * @return {JSX.Element} The rendered component.
+ */
 const UserDetail: React.FC = () => {
   const { userId } = useParams<{ userId: string }>();
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+
+  /**
+ * Fetches user data from the server and updates the state accordingly.
+ *
+ * @return {Promise<void>} A Promise that resolves when the user data is fetched and the state is updated.
+ */
   useEffect(() => {
     const fetchUser = async () => {
       try {

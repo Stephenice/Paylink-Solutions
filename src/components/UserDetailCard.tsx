@@ -10,6 +10,14 @@ interface User {
   website: string;
 }
 
+
+/**
+ * Renders a user detail card component.
+ *
+ * @param {Object} props - The component props.
+ * @param {User} props.user - The user object containing user details.
+ * @return {JSX.Element} The rendered user detail card component.
+ */
 const UserDetailCard: React.FC<{ user: User }> = ({ user }) => {
   const { name, socialMediaHandle, profileImgSrc, bio, location, website } =
     user;
